@@ -9,7 +9,13 @@
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
 <style>
+
 .login-form {
     width: 340px;
     margin: 50px auto;
@@ -20,6 +26,8 @@
     background: #f7f7f7;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
     padding: 30px;
+    top: 40%;
+    position: absolute;
 }
 .login-form h2 {
     margin: 0 0 15px;
@@ -32,9 +40,43 @@
     font-size: 15px;
     font-weight: bold;
 }
+
+
+* {
+  padding: 0;
+  margin: 10;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ae9cff;
+}
+.container {
+  font-size: 1.3em;
+  width: 12em;
+  background: linear-gradient(-240deg, #8468ff 70%, #785bf7 70%);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 20%;
+  left: 50%;
+  padding: 30px;
+  border-radius: 0.4em;
+  box-shadow: 0 1.3em 1.8em rgba(94, 72, 181, 0.25);
+}
+.container h1 {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  word-spacing: 0.4em;
+}
+
 </style>
+
 </head>
 <body>
+    <div class="container">DEMO TEXT</div>
 <div class="login-form">
     <form action="#" method="post">
         <h2 class="text-center">Log in</h2>       
@@ -53,6 +95,10 @@
         </div>        
     </form>
     <p class="text-center"><a href="#">Signup</a></p>
+    <label id="log"></label>
+   
+    
 </div>
+<script src="script.js"></script>
 </body>
 </html>
